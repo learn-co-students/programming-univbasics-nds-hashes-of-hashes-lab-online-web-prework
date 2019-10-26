@@ -3,6 +3,11 @@
 # that HoH as the return value for the method "naming_system."
 #
 # The tests will guide your construction.
+
+Animals = {
+    
+
+}
 #
 # PORTION_1 = {
 #   label: "Kingdom",
