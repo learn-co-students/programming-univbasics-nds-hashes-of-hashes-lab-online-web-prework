@@ -32,13 +32,41 @@
 
 def naming_system
   starting_node = {
-  "Kingdom" = {"Phylum" => {},
-               "Class" => {}}
-  }
-p starting_node
- 
+    "Kingdom" => 
+    {"Phylum" => 
+    { "Class" => 
+    {"Order" => 
+    {"Family" => 
+    {"Genus" => 
+    {"Species" => nil}
+    }}}}},
+    }
+    
+   puts starting_node
+   
+ end 
+    
+     #   "Kingdom" => 
+  #   {"Phylum" => 
+  #   {"Class" => 
+  #   { "Order" => 
+  #   {"Family" => 
+  #   {"Genus" => 
+  #   {"Species" => nil}
+  #   }
+  #   }
+  #   }
+  #   }
+  #   }
+  # } 
+    
+  # "Kingdom" => {
+  #   "Phylum" => {}, "Class" => {
+  #     "Order" => {}},
+  # "Family" => {"Genus" => {"Species" => nil}}
+  # }}         
 
-end
+ 
  # Remember:
   #  Kingdom
   #  Phylum
