@@ -32,20 +32,49 @@
 
 def naming_system
   starting_node = {
-    "Kingdom" => 
-    {"Phylum" => 
-    { "Class" => 
-    {"Order" => 
-    {"Family" => 
-    {"Genus" => 
-    {"Species" => nil}
-    }}}}},
-    }
-    
-   puts starting_node
+   "Kingdom" => "Phylum", 
+    "Class" => {
+     "Order" => {}, 
+     "Family" => {
+       "Genus" => {}, 
+       "Species" => nil
+       
+     }
+   }
+  }
+   return starting_node
    
  end 
-    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+# a_hash = {
+#   "Kingdom" => "Phylum", 
+#   "Class" => {
+#     "Order" => some_value, 
+#     "Family" => {
+#       "Genus" => some_value, 
+#       "Species" => nil
+#       }
+#     }
+#   }
+# }
+# a_hash[:another_key][:another_key][:another_key] 
+# => the_end
+    # "Kingdom" => 
+    # {"Phylum" => 
+    # { "Class" => 
+    # {"Order" => 
+    # {"Family" => 
+    # {"Genus" => 
+    # {"Species" => nil}
+    # }}}}},
+    # }
      #   "Kingdom" => 
   #   {"Phylum" => 
   #   {"Class" => 
@@ -59,14 +88,11 @@ def naming_system
   #   }
   #   }
   # } 
-    
   # "Kingdom" => {
   #   "Phylum" => {}, "Class" => {
   #     "Order" => {}},
   # "Family" => {"Genus" => {"Species" => nil}}
   # }}         
-
- 
  # Remember:
   #  Kingdom
   #  Phylum
