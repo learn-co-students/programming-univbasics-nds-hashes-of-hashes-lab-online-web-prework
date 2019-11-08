@@ -32,21 +32,40 @@
 
 def naming_system
   starting_node = {
-   "Kingdom" => "Phylum", 
-    "Class" => {
-     "Order" => {}, 
-     "Family" => {
-       "Genus" => {}, 
-       "Species" => nil
-       
-     }
-   }
+    :label => "Kingdom",
+    :sub_category => {
+      :label => "Phylum",
+      :sub_category => {
+        :label => "Class",
+      :sub_category => {
+        :label => "Order",
+        :sub_category => {
+          :label => "Family",
+          :sub_category => {
+            :label => "Genus",
+            :sub_category => {
+              :label => "Species"
+            }
+          }
+        }
+        }
+      }
+    }
   }
-   return starting_node
+    
+   p starting_node
    
  end 
  
- 
+# "Kingdom" => 
+#     {"Phylum" => 
+#     { "Class" => 
+#     {"Order" => 
+#     {"Family" => 
+#     {"Genus" => 
+#     {"Species" => nil}
+#     }}}}},
+#     }
  
  
  
@@ -66,15 +85,7 @@ def naming_system
 # }
 # a_hash[:another_key][:another_key][:another_key] 
 # => the_end
-    # "Kingdom" => 
-    # {"Phylum" => 
-    # { "Class" => 
-    # {"Order" => 
-    # {"Family" => 
-    # {"Genus" => 
-    # {"Species" => nil}
-    # }}}}},
-    # }
+  
      #   "Kingdom" => 
   #   {"Phylum" => 
   #   {"Class" => 
@@ -92,7 +103,19 @@ def naming_system
   #   "Phylum" => {}, "Class" => {
   #     "Order" => {}},
   # "Family" => {"Genus" => {"Species" => nil}}
-  # }}         
+  # }}  
+  
+  
+  # "Kingdom" => "Phylum", 
+  #   "Class" => {
+  #   "Order" => {}, 
+  #   "Family" => {
+  #     "Genus" => {}, 
+  #     "Species" => nil
+       
+  #   }
+  # }
+  # }
  # Remember:
   #  Kingdom
   #  Phylum
