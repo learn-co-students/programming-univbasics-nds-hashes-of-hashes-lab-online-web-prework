@@ -41,5 +41,16 @@ def naming_system
   #  Species
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
-
+  naming = {}
+  labels = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"]
+  current = naming # I'm assuming this is passed by reference
+  for i in 0..(labels.length - 1) do 
+    current[:label] = labels[i]
+    if i < labels.length - 1 
+      current[:sub_category] = {}
+      current = current[:sub_category]
+    else 
+      return naming 
+    end 
+  end 
 end
