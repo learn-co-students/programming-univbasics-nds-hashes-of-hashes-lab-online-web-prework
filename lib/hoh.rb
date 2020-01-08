@@ -12,11 +12,23 @@
 #       label: "Class"
 #     }
 #   }
-# }
+def PORTION_1
+PORTION_1 = {
+  :label =>"Kingdom",
+ sub_category = {
+    :label  =>"Phylum",
+    sub_category = {
+    }
+   }
+
 # 
 # PORTION_2 = {
 #   label: "Order"
 # }
+def PORTION_2
+PORTION_2 = { 
+  :label => "Order"
+}
 # 
 # PORTION_3 = {
 #   label: "Family",
@@ -24,11 +36,16 @@
 #     label: "Genus",
 #   }
 # }
-# 
-# PORTION_4 = {
-#   label: "Species",
-#   sub_category: nil
-# }
+ def PORTION_3
+   PORTION_3 = {
+     :label => "Family"
+     sub_category = { 
+       :label => "Genus"
+   }
+PORTION_4 = {
+  :label => "Species",
+  sub_category = { nil
+ }
 
 def naming_system
   # Remember:
@@ -41,5 +58,5 @@ def naming_system
   #  Species
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
-
+puts naming_system = { [PORTION_1 n/ PORTION_2 n/ PORTION_3 n/PORTION_4
 end
