@@ -31,7 +31,92 @@
 # }
 
 def naming_system
-  # Remember:
+  starting_node = {
+    :label => "Kingdom",
+    :sub_category => {
+      :label => "Phylum",
+      :sub_category => {
+        :label => "Class",
+      :sub_category => {
+        :label => "Order",
+        :sub_category => {
+          :label => "Family",
+          :sub_category => {
+            :label => "Genus",
+            :sub_category => {
+              :label => "Species"
+            }
+          }
+        }
+        }
+      }
+    }
+  }
+    
+   p starting_node
+   
+ end 
+ 
+# "Kingdom" => 
+#     {"Phylum" => 
+#     { "Class" => 
+#     {"Order" => 
+#     {"Family" => 
+#     {"Genus" => 
+#     {"Species" => nil}
+#     }}}}},
+#     }
+ 
+ 
+ 
+ 
+ 
+ 
+# a_hash = {
+#   "Kingdom" => "Phylum", 
+#   "Class" => {
+#     "Order" => some_value, 
+#     "Family" => {
+#       "Genus" => some_value, 
+#       "Species" => nil
+#       }
+#     }
+#   }
+# }
+# a_hash[:another_key][:another_key][:another_key] 
+# => the_end
+  
+     #   "Kingdom" => 
+  #   {"Phylum" => 
+  #   {"Class" => 
+  #   { "Order" => 
+  #   {"Family" => 
+  #   {"Genus" => 
+  #   {"Species" => nil}
+  #   }
+  #   }
+  #   }
+  #   }
+  #   }
+  # } 
+  # "Kingdom" => {
+  #   "Phylum" => {}, "Class" => {
+  #     "Order" => {}},
+  # "Family" => {"Genus" => {"Species" => nil}}
+  # }}  
+  
+  
+  # "Kingdom" => "Phylum", 
+  #   "Class" => {
+  #   "Order" => {}, 
+  #   "Family" => {
+  #     "Genus" => {}, 
+  #     "Species" => nil
+       
+  #   }
+  # }
+  # }
+ # Remember:
   #  Kingdom
   #  Phylum
   #  Class
@@ -41,5 +126,3 @@ def naming_system
   #  Species
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
-
-end
